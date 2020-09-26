@@ -20,9 +20,3 @@ after_success
   - docker push -t mkawtharani/multi-nginx
   - docker push -t mkawtharani/multi-server
   - docker push -t mkawtharani/multi-worker
-
-deploy:
-  provider: script
-  script: bash ./deploy.sh
-  on:
-    branch: master
